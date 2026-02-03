@@ -17,14 +17,14 @@
       <q-btn
         color="positive"
         label="Adicionar ao Carrinho"
-        @click="trackAddToCart"
+        @click="handleAddToCart"
         size="lg"
       />
       
       <q-btn
         color="info"
         label="Realizar Compra"
-        @click="trackPurchase"
+        @click="handlePurchase"
         size="lg"
       />
     </div>
@@ -69,7 +69,7 @@ const trackInitAccount = () => {
   console.log('[GTM] Visualização de ingresso rastreada')
 }
 
-const trackAddToCart = () => {
+const handleAddToCart = () => {
   // Adicionar 2 ingressos ao carrinho
   const cartItems = [
     {
@@ -83,7 +83,7 @@ const trackAddToCart = () => {
   console.log('[GTM] Ingressos adicionados ao carrinho')
 }
 
-const trackPurchase = () => {
+const handlePurchase = () => {
   // Simular compra completa
   const cartItems = [
     {
