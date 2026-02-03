@@ -36,7 +36,7 @@ const trackInitAccount = () => {
   // Dados para o evento de inicialização de conta
   const accountData = {
     event: 'initAccount',
-    user_id: 'user_' + Math.random().toString(36).substr(2, 9),
+    user_id: 123,
     account_type: 'premium',
     registration_date: new Date().toISOString(),
     country: 'BR',
@@ -54,6 +54,7 @@ const trackAddToCart = () => {
   // Dados para o evento de adicionar ao carrinho
   const cartData = {
     event: 'addToCart',
+    user_id: 123,
     ecommerce: {
       items: [
         {
@@ -84,6 +85,7 @@ const trackPurchase = () => {
   // Dados para o evento de compra
   const purchaseData = {
     event: 'purchase',
+    user_id: 123,
     transaction_id: 'txn_' + Math.random().toString(36).substr(2, 9),
     affiliation: 'Ticket Marketplace',
     value: 700.00,
@@ -112,7 +114,6 @@ const trackPurchase = () => {
         }
       ]
     },
-    user_id: 'user_' + Math.random().toString(36).substr(2, 9),
     customer_lifetime_value: 2450.00
   }
   
