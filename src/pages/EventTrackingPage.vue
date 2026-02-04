@@ -300,7 +300,7 @@ const cartItem = ref({
 const cart = ref([])
 
 const userInfo = ref({
-  user_id: 'user_123',
+  user_id: 123,
   email: 'customer@example.com'
 })
 

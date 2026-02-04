@@ -149,7 +149,7 @@ const tests = {
     }]
 
     trackBeginCheckout(items, 200, {
-      user_id: 'test_user_123',
+      user_id: 123,
       email: 'test@example.com'
     })
 
@@ -210,7 +210,7 @@ const tests = {
       tax: 45,
       shipping: 0,
       currency: 'BRL',
-      user_id: 'test_user_123',
+      user_id: 123,
       email: 'test@example.com',
       payment_method: 'credit_card'
     })
