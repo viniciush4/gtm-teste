@@ -21,6 +21,7 @@ const pushEvent = (eventName, eventData) => {
   initDataLayer()
   const event = {
     event: eventName,
+    user_id: 123,
     ...eventData
   }
   window.dataLayer.push(event)
