@@ -3,8 +3,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
-      { path: 'event-tracking', component: () => import('pages/EventTrackingPage.vue') }
+      { path: '', component: () => import('pages/EventTrackingPage.vue') }
     ],
   },
 

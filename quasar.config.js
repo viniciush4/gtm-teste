@@ -53,7 +53,11 @@ export default defineConfig((/* ctx */) => {
       // polyfillModulePreload: true,
       // distDir
 
-      // extendViteConf (viteConf) {},
+      extendViteConf (viteConf) {
+        viteConf.resolve = viteConf.resolve || {}
+        viteConf.resolve.alias = viteConf.resolve.alias || {}
+        viteConf.resolve.alias['@'] = new URL('./src', import.meta.url).pathname
+      },
       // viteVuePluginOptions: {},
 
       vitePlugins: [

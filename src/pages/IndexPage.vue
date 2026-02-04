@@ -35,7 +35,6 @@
 import {
   trackViewItem,
   trackAddToCart,
-  trackBeginCheckout,
   trackAddPaymentInfo,
   trackPurchase,
   setUserInfo
